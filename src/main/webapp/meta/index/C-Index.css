@@ -1,0 +1,337 @@
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.firstView {
+  height: 100vh;
+  position: relative;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  ;
+}
+
+nav {
+  padding: 20px 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+}
+
+.navItem {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.navItem:hover {
+  cursor: pointer;
+}
+
+.navRight {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  z-index: 1;
+}
+
+
+.birdSlide {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  right: -200px;
+  top: 0;
+  clip-path: polygon(39% 0, 100% 0, 65% 100%, 0% 100%);
+
+}
+
+.BAD {
+  position: absolute;
+  margin: 0;
+  left: 170px;
+  top: 200px;
+  width: 700px;
+  font-size: 80px;
+}
+
+.slogan {
+  position: absolute;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 350;
+  top: 420px;
+  left: 170px;
+}
+
+.start {
+  position: absolute;
+  margin: 0;
+  background-color: rgb(236, 9, 9);
+  width: 120px;
+  height: 60px;
+  color: rgb(223, 221, 221);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  top: 480px;
+  left: 170px;
+}
+
+.start:hover {
+  cursor: pointer;
+  background-color: darkred;
+  color: rgb(255, 255, 255);
+}
+
+
+.about {
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  width: 32%;
+  top: 80px;
+  right: 150px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.bold {
+  font-weight: 1000;
+}
+
+.img {
+  width: 15%;
+  position: absolute;
+}
+
+.img:nth-child(1) {
+  top: 170px;
+  left: 460px;
+  z-index: 1;
+}
+
+.img:nth-child(2) {
+  top: 90px;
+  left: 160px;
+}
+
+.img:nth-child(3) {
+  top: 380px;
+  left: 250px;
+}
+
+.helpAdvantage {
+  height: 150vh;
+}
+
+.haTitle {
+  text-align: center;
+  font-weight: 700;
+  padding-top: 150px;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.helpList {
+  display: flex;
+  padding-top: 70px;
+}
+
+.helpList li {
+  font-size: 16px;
+  text-align: justify;
+  width: 20%;
+  padding-right: 80px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.helpList i {
+  padding-right: 30px;
+  padding-left: 10px;
+  color: red;
+}
+
+.collection {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+.collectionImage {
+  width: 30%;
+  padding-top: 70px;
+}
+
+.collectionItem {
+  width: 20%;
+  text-align: center;
+}
+
+.collectionItem h3 {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.collectionItem p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.community {
+  position: relative;
+  height: 60vh;
+  margin-top: 50px;
+}
+
+.shareInterests {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 30%;
+}
+
+.community p {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 30%;
+  line-height: 25px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.comBtn {
+  position: absolute;
+  top: 280px;
+  left: 50px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.comBtn:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.map {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 60%;
+}
+
+.map img {
+  width: 100%;
+}
+
+.portfolio {
+  height: auto;
+  max-height: 300vh;
+  background-color: rgb(240, 240, 240);
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  padding-top: 90px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+}
+
+.galleryImage {
+  width: 30vw;
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.galleryImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  text-align: center;
+  height: 40vh;
+  padding: 20px;
+}
+
+.contactTitle {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.info {
+  font-size: 18px;
+  padding: 0;
+  margin: 5px;
+  font-weight: 300;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+
+.follow {
+  color: grey;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  z-index: 1;
+}

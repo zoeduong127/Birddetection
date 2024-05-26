@@ -1,0 +1,137 @@
+<!-- TODO: Add a forgot password section  -->
+<!-- TODO: TOP div has hover, not the elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="C-main.css" id="currentCSS">
+	<script src="J-main.js" defer></script>
+	<script src="https://kit.fontawesome.com/35fd1c9d8e.js" crossorigin="anonymous"></script>
+	<title>Main</title>
+</head>
+
+<body>
+
+<div class="original">
+	<div class="birdWorld">
+		<div class="left">
+			<div class="navnav">
+				<span id="logout-button" onclick="logout()">Logout</span>
+				<span onclick="Archive()">Archive</span>
+			</div>
+			<h1 class="title"><i class="fa-brands fa-earlybirds fa-bounce" style="color: #1daa68; margin-left: -0.5vw; margin-right: 1.5vw"></i>MY BIRD WORLD</h1>
+			<div class="stat" style="margin-top: -0.2vh">
+				<!-- icon area -->
+				<span>
+					<i class="fa-solid fa-binoculars fa-2xl" style="color: #000000;"></i>
+				</span>
+				<h1 class="num" id="distinct" style="margin-top: 7.0vh">~20~</h1>
+				<span class="statName" style="margin-top: -7.5vh">Distinct species observed</span>
+			</div>
+			<div class="stat">
+				<!-- icon area -->
+				<span>
+					<i class="fa-solid fa-file-lines fa-2xl" style="color: #000000;"></i>
+				</span>
+				<h1 class="num" id="confidence">~100~</h1>
+				<span class="statName">Average confidence in observed species</span>
+			</div>
+			<div class="graph">
+				<i class="fa-solid fa-tree" style="color: #8c3a17; scale: 8; margin-top: 28vh; margin-left: 6.5vw; z-index: 1"></i>
+				<i class="fa-solid fa-dove" style="color: #2d865c; scale:3; margin-left: 20vw; z-index: 1; padding-left: 5.3vw; padding-top: 3vh; position: relative"></i>
+				<i class="fa-solid fa-house" style="color: #5e5e5e; scale: 6; margin-left: 4vw"></i>
+				<div class="snowfall"></div>
+			</div>
+		</div>
+		<div class="right">
+			<img src="../img/Eagle.jpg" alt="">
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<h1 class="galTitle">Gallery</h1>
+		<div class="nav">
+			<div class="navItem">
+				<div class="search">
+					<input type="text" name="search" id="search" placeholder="Search for a species"
+					       onfocus="getAllSpecies()">
+				</div>
+			</div>
+			
+			<div class="navItem">
+				<div class="date">
+					<label for="startDate">Start date:</label>
+					<input type="date" name="date" id="startDate" placeholder="dd/mm/yyyy">
+				</div>
+			</div>
+			<div class="navItem">
+				<div class="date">
+					<label for="endDate">End date:</label>
+					<input type="date" name="date" id="endDate" placeholder="dd/mm/yyyy">
+				</div>
+			</div>
+			
+			<div class="navItem">
+				<button class="filter" onclick="filterByDate()">Filter</button>
+			</div>
+			
+			<button class="galleryView" onclick="showGallery()">Change View</button>
+		</div>
+		
+		<div class="imgsection">
+		</div>
+	</div>
+	
+	<div class="recent">
+		<h1 class="recTitle">Recent Captures</h1>
+		<div class="imgItem"></div>
+	</div>
+	
+	<!-- TODO: recent news, think about if you want to add it. just copy paste the recent -->
+</div>
+
+<div class="pureGallery">
+	<h1 class="galTitle" style="color: brown">Gallery</h1>
+	<div class="nav">
+		<div class="navItem">
+			<div class="search" id="search2">
+				<input type="text" name="search" id="searchGallery" placeholder="Search for a species"
+				       onfocus="getAllSpecies()">
+			</div>
+		</div>
+		
+		<div class="navItem">
+			<div class="date">
+				<label for="startDateGallery">Start date:</label>
+				<input type="date" name="date" id="startDateGallery" placeholder="dd/mm/yyyy">
+			</div>
+		</div>
+		<div class="navItem">
+			<div class="date">
+				<label for="endDateGallery">End date:</label>
+				<input type="date" name="date" id="endDateGallery" placeholder="dd/mm/yyyy">
+			</div>
+		</div>
+		
+		<div class="navItem">
+			<button class="filter" onclick="filterByDateGallery()">Filter</button>
+		</div>
+		<button class="galleryView" onclick="removeGallery()">Change View</button>
+	</div>
+	
+	<div class="pure_imgsection">
+	
+	</div>
+</div>
+
+<div class="archiveGallery">
+	<h1 class="galTitle" style="color: brown">Archive</h1>
+	<button class="galleryView" onclick="removeGallery()">Change View</button>
+	<div class="archive_imgSection"></div>
+</div>
+</body>
+
+</html>
